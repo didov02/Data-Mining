@@ -23,6 +23,8 @@ public class Solver {
 
     private Random random;
 
+    private int oldRow;
+
     public Solver(int size) {
         this.size = size;
         this.rows = new int[size];
@@ -34,6 +36,7 @@ public class Solver {
         this.queens = new ArrayList<>();
         this.random = new Random();
         this.currentQueenConflicts = 0;
+        this.oldRow = -1;
     }
 
     public void initialize() {
@@ -72,7 +75,10 @@ public class Solver {
             return -1;
         }
 
-        return this.queens.get(this.random.nextInt(this.queens.size()));
+        int selectedCol = this.queens.get(this.random.nextInt(this.queens.size()));
+        this.oldRow = this.rows[selectedCol];
+
+        return selectedCol;
     }
 
     public int getRowWithMinConflict(int col) {
@@ -108,9 +114,8 @@ public class Solver {
                 break;
             }
 
-            int oldRow = this.currentQueenConflicts;
             this.rows[col] = getRowWithMinConflict(col);
-            fixDiagonals(oldRow, this.rows[col], col);
+            fixDiagonals(this.oldRow, this.rows[col], col);
 
             changesMade++;
             if(changesMade == this.size * 2){
