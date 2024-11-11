@@ -3,6 +3,12 @@ import java.util.*;
 public class Solver {
     private int[] rows;
 
+    private int[] queensPerRow;
+
+    private int[] d1;
+
+    private int[] d2;
+
     private int size;
 
     private final int NO_CONFLICTS = 0;
@@ -17,47 +23,36 @@ public class Solver {
 
     private Random random;
 
+    private int oldRow;
+
     public Solver(int size) {
         this.size = size;
         this.rows = new int[size];
+        this.queensPerRow = new int[size];
+        this.d1 = new int[2 * size - 1];
+        this.d2 = new int[2 * size - 1];
         this.maxConflicts = 0;
         this.minConflicts = size;
         this.queens = new ArrayList<>();
         this.random = new Random();
         this.currentQueenConflicts = 0;
+        this.oldRow = -1;
     }
 
     public void initialize() {
-        for (int i = 0; i < this.size; i++) {
-            this.rows[i] = i;
-        }
-
-        int tempNum = 0;
+        int index = 0;
 
         for (int i = 0; i < this.size; i++) {
-            int index = random.nextInt(this.size);
-            tempNum = this.rows[index];
-            this.rows[index] = this.rows[i];
-            this.rows[i] = tempNum;
+            index = random.nextInt(this.size);
+            this.rows[i] = index;
+            queensPerRow[index]++;
+            d1[index - i + this.size - 1]++;
+            d2[i + index]++;
         }
     }
 
     public int getConflictsCount(int row, int col) {
-        int conflicts = 0;
-
-        for (int otherCol = 0; otherCol < this.size; otherCol++) {
-            if(otherCol == col) {
-                continue;
-            }
-
-            int otherRow = this.rows[otherCol];
-
-            if(Math.abs(otherRow - row) == Math.abs(otherCol - col) || row == otherRow) {
-                conflicts++;
-            }
-        }
-
-        return conflicts;
+        return queensPerRow[row] + d1[row - col + this.size - 1] + d2[col + row] - 3;
     }
 
     public int getColWithQueenWithMaxConf() {
@@ -80,7 +75,10 @@ public class Solver {
             return -1;
         }
 
-        return this.queens.get(this.random.nextInt(this.queens.size()));
+        int selectedCol = this.queens.get(this.random.nextInt(this.queens.size()));
+        this.oldRow = this.rows[selectedCol];
+
+        return selectedCol;
     }
 
     public int getRowWithMinConflict(int col) {
@@ -117,6 +115,7 @@ public class Solver {
             }
 
             this.rows[col] = getRowWithMinConflict(col);
+            fixDiagonals(this.oldRow, this.rows[col], col);
 
             changesMade++;
             if(changesMade == this.size * 2){
@@ -124,6 +123,17 @@ public class Solver {
                 changesMade = 0;
             }
         }
+    }
+
+    public void fixDiagonals(int oldRow, int newRow, int col) {
+        queensPerRow[oldRow]--;
+        queensPerRow[newRow]++;
+
+        d1[oldRow - col + this.size - 1]--;
+        d1[newRow - col + this.size - 1]++;
+
+        d2[col + oldRow]--;
+        d2[col + newRow]++;
     }
 
     public boolean isSolvable() {
