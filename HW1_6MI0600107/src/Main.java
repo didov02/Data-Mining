@@ -115,9 +115,9 @@ public class Main {
 
         System.out.println(startBoard.toString());
 
-        double start = System.currentTimeMillis();
+        long start = System.nanoTime();
         Board finalBoard = getFinalBoard(startBoard);
-        double end = System.currentTimeMillis();
+        long end = System.nanoTime();
 
         System.out.println(finalBoard.getMovesCount() + "\n");
 
@@ -129,7 +129,8 @@ public class Main {
         String answer = scanner.next();
         System.out.println();
 
-        checkIfTimeIsWanted(answer, end - start);
+        double wholeTime = (end - start) / 1000000000.0;
+        checkIfTimeIsWanted(answer, wholeTime);
     }
 
     public static void main(String[] args) {
