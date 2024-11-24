@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab1ac97e-60bf-4164-965c-c4f2dc8d5aa0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ffbb062e-2893-4806-88e3-5025c71dcd11" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../HW1_6MI0600107/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW1_6MI0600107/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HW2_6MI0600107/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW2_6MI0600107/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,34 +23,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
+  &quot;associatedIndex&quot;: 1
 }</component>
-  <component name="ProjectId" id="2nxvztZBbvcx3fyWIrEPyi4u2kM" />
+  <component name="ProjectId" id="2otbWf1cGpMklnxkvjLXdTBZaYK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.GeneticKnapsack.executor": "Run",
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "HW3",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/dianv/Desktop/GitHub/Data-Mining/HW2_6MI0600107",
+    "last_opened_file_path": "C:/Users/dianv/Downloads/Knapsack-Problem",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -64,32 +58,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ab1ac97e-60bf-4164-965c-c4f2dc8d5aa0" name="Changes" comment="" />
-      <created>1729927828472</created>
+      <changelist id="ffbb062e-2893-4806-88e3-5025c71dcd11" name="Changes" comment="" />
+      <created>1731691877659</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1729927828472</updated>
-      <workItem from="1729927830097" duration="21847000" />
-      <workItem from="1730133852789" duration="8159000" />
-      <workItem from="1730268826088" duration="1956000" />
-      <workItem from="1730571663053" duration="10892000" />
-      <workItem from="1731430568805" duration="5123000" />
-      <workItem from="1731442525086" duration="3875000" />
+      <updated>1731691877659</updated>
+      <workItem from="1731691879139" duration="812000" />
+      <workItem from="1731841267068" duration="10769000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
