@@ -4,42 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffbb062e-2893-4806-88e3-5025c71dcd11" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../HW1_6MI0600107/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW1_6MI0600107/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW2_6MI0600107/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW2_6MI0600107/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5bb3f5ae-9b2b-4343-9616-8f4cbf0e76cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GeneticKnapsack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RatioIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HW2_6MI0600107/src/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HW2_6MI0600107/src/Solver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HW4_6MI0600107/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HW4_6MI0600107/src/Board.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
-}</component>
-  <component name="ProjectId" id="2otbWf1cGpMklnxkvjLXdTBZaYK" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2qG74lKotRkjAE7qWHnrUEh5RQl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.GeneticKnapsack.executor": "Run",
-    "Application.Main.executor": "Run",
+    "Application.Main.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "HW3",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/dianv/Downloads/Knapsack-Problem",
+    "last_opened_file_path": "C:/Users/dianv/Desktop/GitHub/Data-Mining/HW3_6MI0600107/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,27 +45,45 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
-      </set>
-    </attachedChunks>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dianv\Desktop\GitHub\Data-Mining\HW3_6MI0600107\src" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ffbb062e-2893-4806-88e3-5025c71dcd11" name="Changes" comment="" />
-      <created>1731691877659</created>
+      <changelist id="5bb3f5ae-9b2b-4343-9616-8f4cbf0e76cd" name="Changes" comment="" />
+      <created>1734276870055</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1731691877659</updated>
-      <workItem from="1731691879139" duration="812000" />
-      <workItem from="1731841267068" duration="10769000" />
+      <updated>1734276870055</updated>
+      <workItem from="1734276871164" duration="3082000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GeneticKnapsack.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

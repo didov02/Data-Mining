@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Data-Mining.iml" filepath="$PROJECT_DIR$/.idea/Data-Mining.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HW1_6MI0600107/HW1_6MI0600107.iml" filepath="$PROJECT_DIR$/HW1_6MI0600107/HW1_6MI0600107.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HW2_6MI0600107/HW2_6MI0600107.iml" filepath="$PROJECT_DIR$/HW2_6MI0600107/HW2_6MI0600107.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HW3_6MI0600107/HW3_6MI0600107.iml" filepath="$PROJECT_DIR$/HW3_6MI0600107/HW3_6MI0600107.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HW4_6MI0600107/HW4_6MI0600107.iml" filepath="$PROJECT_DIR$/HW4_6MI0600107/HW4_6MI0600107.iml" />
+    </modules>
+  </component>
+</project>

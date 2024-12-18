@@ -3,7 +3,7 @@ import java.util.*;
 public class Solver {
     private int[] rows;
 
-    private int[] queensPerRow;
+    private int[] queensPerColumn;
 
     private int[] d1;
 
@@ -28,7 +28,7 @@ public class Solver {
     public Solver(int size) {
         this.size = size;
         this.rows = new int[size];
-        this.queensPerRow = new int[size];
+        this.queensPerColumn = new int[size];
         this.d1 = new int[2 * size - 1];
         this.d2 = new int[2 * size - 1];
         this.maxConflicts = 0;
@@ -45,14 +45,14 @@ public class Solver {
         for (int i = 0; i < this.size; i++) {
             index = random.nextInt(this.size);
             this.rows[i] = index;
-            queensPerRow[index]++;
+            queensPerColumn[index]++;
             d1[index - i + this.size - 1]++;
             d2[i + index]++;
         }
     }
 
     public int getConflictsCount(int row, int col) {
-        return queensPerRow[row] + d1[row - col + this.size - 1] + d2[col + row] - 3;
+        return queensPerColumn[row] + d1[row - col + this.size - 1] + d2[col + row] - 3;
     }
 
     public int getColWithQueenWithMaxConf() {
@@ -126,8 +126,8 @@ public class Solver {
     }
 
     public void fixDiagonals(int oldRow, int newRow, int col) {
-        queensPerRow[oldRow]--;
-        queensPerRow[newRow]++;
+        queensPerColumn[oldRow]--;
+        queensPerColumn[newRow]++;
 
         d1[oldRow - col + this.size - 1]--;
         d1[newRow - col + this.size - 1]++;

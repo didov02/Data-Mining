@@ -141,7 +141,7 @@ public class Board {
                     int score = minimax(PLAYER, Integer.MIN_VALUE, Integer.MAX_VALUE);
                     board[i][j] = '_';
 
-                    if (score < bestScore) { // Minimize score for COMPUTER
+                    if (score < bestScore) {
                         bestScore = score;
                         move[0] = i;
                         move[1] = j;
